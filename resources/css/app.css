@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: #0d0d0d;
+    color: #ffffff;
+  }
+  body.theme-light {
+    background: linear-gradient(135deg, #eff6ff 0%, #f8fafc 45%, #eef2ff 100%);
+    color: #111827;
+  }
+  body.theme-light .bg-\[\#0d0d0d\],
+  body.theme-light .bg-\[\#111\],
+  body.theme-light .bg-\[\#151515\],
+  body.theme-light .bg-\[\#161616\],
+  body.theme-light .bg-\[\#1a1a1a\],
+  body.theme-light .bg-black\/20,
+  body.theme-light .bg-black\/30 {
+    background-color: #ffffff !important;
+  }
+  body.theme-light .text-gray-400,
+  body.theme-light .text-gray-500,
+  body.theme-light .text-gray-600,
+  body.theme-light .text-gray-300 {
+    color: #475569 !important;
+  }
+  body.theme-light .text-white,
+  body.theme-light .text-gray-100 {
+    color: #111827 !important;
+  }
+  body.theme-light .border-white\/\[0\.06\],
+  body.theme-light .border-white\/10,
+  body.theme-light .border-white\/8 {
+    border-color: rgba(15, 23, 42, 0.08) !important;
+  }
+  ::-webkit-scrollbar { width: 4px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.1); border-radius: 4px; }
+}
+
+@layer components {
+  .nav-item {
+    @apply flex items-center gap-2.5 px-4 py-2.5 cursor-pointer text-gray-400 text-sm font-normal transition-all duration-200 rounded-none;
+  }
+  .nav-item:hover {
+    @apply text-white bg-white/5;
+  }
+  .nav-item.active {
+    @apply bg-gold text-black font-semibold rounded-lg mx-2.5 px-3;
+  }
+
+  .stat-card {
+    @apply bg-[#161616] border border-white/[0.06] rounded-xl p-3.5;
+  }
+
+  .sys-card {
+    @apply bg-[#161616] border border-white/[0.06] rounded-xl p-4 flex flex-col gap-2 cursor-pointer transition-all duration-200;
+  }
+  .sys-card:hover {
+    @apply border-gold/30;
+  }
+
+  .sys-btn {
+    @apply border border-gold text-gold bg-transparent px-3 py-1.5 rounded-md text-xs font-medium cursor-pointer transition-all duration-200 w-fit;
+  }
+  .sys-btn:hover {
+    @apply bg-gold text-black;
+  }
+
+  .panel-card {
+    @apply bg-[#161616] border border-white/[0.06] rounded-xl p-3.5;
+  }
+}

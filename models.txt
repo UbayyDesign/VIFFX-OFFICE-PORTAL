@@ -1,0 +1,11 @@
+﻿C:\xampp\htdocs\vif-office-laravel\app\Models\Announcement.php
+C:\xampp\htdocs\vif-office-laravel\app\Models\CalendarEvent.php
+C:\xampp\htdocs\vif-office-laravel\app\Models\Candidate.php
+C:\xampp\htdocs\vif-office-laravel\app\Models\ItTicket.php
+C:\xampp\htdocs\vif-office-laravel\app\Models\KpiRecord.php
+C:\xampp\htdocs\vif-office-laravel\app\Models\ModuleStatus.php
+C:\xampp\htdocs\vif-office-laravel\app\Models\Report.php
+C:\xampp\htdocs\vif-office-laravel\app\Models\ReportDetail.php
+C:\xampp\htdocs\vif-office-laravel\app\Models\Sdm.php
+C:\xampp\htdocs\vif-office-laravel\app\Models\Team.php
+C:\xampp\htdocs\vif-office-laravel\app\Models\User.php

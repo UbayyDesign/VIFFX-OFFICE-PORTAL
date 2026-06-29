@@ -1,0 +1,76 @@
+
+ GET|HEAD / .. routes/web.php:15
+ GET|HEAD announcements .. announcements.index › AnnouncementController@index
+ POST announcements .. announcements.store › AnnouncementController@store
+ GET|HEAD announcements/create .. announcements.create › AnnouncementController@create
+ GET|HEAD announcements/{announcement} .. announcements.show › AnnouncementController@show
+ PUT|PATCH announcements/{announcement} .. announcements.update › AnnouncementController@update
+ DELETE announcements/{announcement} .. announcements.destroy › AnnouncementController@destroy
+ GET|HEAD announcements/{announcement}/edit .. announcements.edit › AnnouncementController@edit
+ GET|HEAD calendar .. calendar.index › CalendarController@index
+ POST calendar .. calendar.store › CalendarController@store
+ GET|HEAD calendar/create .. calendar.create › CalendarController@create
+ GET|HEAD calendar/{calendar} .. calendar.show › CalendarController@show
+ PUT|PATCH calendar/{calendar} .. calendar.update › CalendarController@update
+ DELETE calendar/{calendar} .. calendar.destroy › CalendarController@destroy
+ GET|HEAD calendar/{calendar}/edit .. calendar.edit › CalendarController@edit
+ GET|HEAD company-profile .. company.profile › DashboardController@companyProfile
+ GET|HEAD company-website .. company.website › CompanyWebsiteController@index
+ GET|HEAD confirm-password .. password.confirm › Auth\ConfirmablePasswordController@show
+ POST confirm-password .. Auth\ConfirmablePasswordController@store
+ GET|HEAD dashboard .. dashboard › DashboardController@index
+ POST email/verification-notification .. verification.send › Auth\EmailVerificationNotificationController@store
+ GET|HEAD forgot-password .. password.request › Auth\PasswordResetLinkController@create
+ POST forgot-password .. password.email › Auth\PasswordResetLinkController@store
+ GET|HEAD kpi .. kpi.index › KpiController@index
+ POST kpi .. kpi.store › KpiController@store
+ GET|HEAD kpi/create .. kpi.create › KpiController@create
+ GET|HEAD kpi/dashboard .. kpi.dashboard › KpiController@dashboard
+ GET|HEAD kpi/report .. kpi.report › KpiController@report
+ GET|HEAD kpi/sdm .. kpi.sdm › KpiController@sdm
+ GET|HEAD kpi/setting .. kpi.setting › KpiController@setting
+ GET|HEAD kpi/{kpi} .. kpi.show › KpiController@show
+ PUT|PATCH kpi/{kpi} .. kpi.update › KpiController@update
+ DELETE kpi/{kpi} .. kpi.destroy › KpiController@destroy
+ GET|HEAD kpi/{kpi}/edit .. kpi.edit › KpiController@edit
+ GET|HEAD login .. login › Auth\AuthenticatedSessionController@create
+ POST login .. Auth\AuthenticatedSessionController@store
+ POST logout .. logout › Auth\AuthenticatedSessionController@destroy
+ GET|HEAD news .. news.index › NewsController@index
+ GET|HEAD nextcloud .. nextcloud.index › NextcloudController@index
+ POST nextcloud/upload .. nextcloud.upload › NextcloudController@upload
+ GET|HEAD notifications .. notifications.center › NotificationController@index
+ GET|HEAD ohlc .. ohlc.index › OhlcController@index
+ GET|HEAD ohlc/{slug} .. ohlc.detail › OhlcController@detail
+ PUT password .. password.update › Auth\PasswordController@update
+ GET|HEAD profile .. profile.edit › ProfileController@edit
+ PATCH profile .. profile.update › ProfileController@update
+ DELETE profile .. profile.destroy › ProfileController@destroy
+ DELETE profile/avatar .. profile.avatar.destroy › ProfileController@destroyAvatar
+ GET|HEAD recruitment .. recruitment.index › RecruitmentController@index
+ POST recruitment .. recruitment.store › RecruitmentController@store
+ GET|HEAD recruitment/create .. recruitment.create › RecruitmentController@create
+ GET|HEAD recruitment/{recruitment} .. recruitment.show › RecruitmentController@show
+ PUT|PATCH recruitment/{recruitment} .. recruitment.update › RecruitmentController@update
+ DELETE recruitment/{recruitment} .. recruitment.destroy › RecruitmentController@destroy
+ GET|HEAD recruitment/{recruitment}/edit .. recruitment.edit › RecruitmentController@edit
+ GET|HEAD register .. register › Auth\RegisteredUserController@create
+ POST register .. Auth\RegisteredUserController@store
+ POST reset-password .. password.store › Auth\NewPasswordController@store
+ GET|HEAD reset-password/{token} .. password.reset › Auth\NewPasswordController@create
+ GET|HEAD storage/{path} .. storage.local › vendor/laravel/framework/src/Illuminate/Filesystem/FilesystemServiceProvider.php:111
+ PUT storage/{path} storage.local.upload › vendor/laravel/framework/src/Illuminate/Filesystem/FilesystemServiceProvider.php…
+ GET|HEAD system-status .. system.status › DashboardController@systemStatus
+ GET|HEAD up .. vendor/laravel/framework/src/Illuminate/Foundation/Configuration/ApplicationBuilder.php:224
+ GET|HEAD users .. users.index › UserController@index
+ POST users .. users.store › UserController@store
+ GET|HEAD users/create .. users.create › UserController@create
+ PUT|PATCH users/{user} .. users.update › UserController@update
+ DELETE users/{user} .. users.destroy › UserController@destroy
+ GET|HEAD users/{user}/edit .. users.edit › UserController@edit
+ GET|HEAD verify-email .. verification.notice › Auth\EmailVerificationPromptController
+ GET|HEAD verify-email/{id}/{hash} .. verification.verify › Auth\VerifyEmailController
+ GET|HEAD vimport .. vimport.index › VimportController@index
+
+ Showing [72] routes
+
